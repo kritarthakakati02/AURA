@@ -1,0 +1,3315 @@
+[
+  {
+    "question_id": "gsm8k_train_04768",
+    "category": "mathematical_reasoning",
+    "prompt": "Katerina purchases 3 pots and 4 pans at the home goods store. Each pot costs $20. The total cost of Katerina's items is $100. If each pan is the same price, what is the cost of 2 pans?\nGive your final numeric answer on the last line.",
+    "expected_answer": "20",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-04768",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_07216",
+    "category": "mathematical_reasoning",
+    "prompt": "A baker is comparing the day’s sales to his daily average. He usually sells 20 pastries and 10 loaves of bread. Today, he sells 14 pastries and 25 loaves of bread. If pastries are sold for $2 and loaves of bread are sold for $4, what is the difference, in dollars, between the baker’s daily average and total for today?\nGive your final numeric answer on the last line.",
+    "expected_answer": "48",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-07216",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_07306",
+    "category": "mathematical_reasoning",
+    "prompt": "If the number of dogs in the neighborhood was originally half the number of cats in the neighborhood before twenty new dogs were born, and now there are twice as many dogs as cats, how many cats were in the neighborhood, to begin with, if there are 20 cats now?\nGive your final numeric answer on the last line.",
+    "expected_answer": "40",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-07306",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_02730",
+    "category": "mathematical_reasoning",
+    "prompt": "It takes 3 men an hour to complete a job. If they are hired to work on 5 such similar jobs by a company that pays each of them $10 per hour, calculate the total amount of money the three will earn when they complete the jobs?\nGive your final numeric answer on the last line.",
+    "expected_answer": "150",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-02730",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01695",
+    "category": "mathematical_reasoning",
+    "prompt": "Carson is a night security guard. He's supposed to patrol the outside of a warehouse that's 600 feet long and 400 feet wide. If Carson is supposed to circle the warehouse 10 times, but gets tired and skips 2 times, how far does he walk in one night?\nGive your final numeric answer on the last line.",
+    "expected_answer": "16000",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01695",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0818",
+    "category": "python_coding",
+    "prompt": "Write a python function to count lower case letters in a given string.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "lower_ctr",
+      "description": "Write a python function to count lower case letters in a given string.",
+      "cases": [
+        {
+          "args": [
+            "abc"
+          ],
+          "expected": 3
+        },
+        {
+          "args": [
+            "string"
+          ],
+          "expected": 6
+        },
+        {
+          "args": [
+            "Python"
+          ],
+          "expected": 5
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "818",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0657",
+    "category": "python_coding",
+    "prompt": "Write a python function to find the first digit in factorial of a given number.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "first_Digit",
+      "description": "Write a python function to find the first digit in factorial of a given number.",
+      "cases": [
+        {
+          "args": [
+            5
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            10
+          ],
+          "expected": 3
+        },
+        {
+          "args": [
+            7
+          ],
+          "expected": 5
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "657",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0815",
+    "category": "python_coding",
+    "prompt": "Write a function to sort the given array without using any sorting algorithm. the given array consists of only 0, 1, and 2.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "sort_by_dnf",
+      "description": "Write a function to sort the given array without using any sorting algorithm. the given array consists of only 0, 1, and 2.",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              2,
+              0,
+              1,
+              0,
+              1,
+              2,
+              1,
+              1
+            ],
+            9
+          ],
+          "expected": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              0,
+              0,
+              1,
+              2,
+              1,
+              2,
+              2,
+              1,
+              0
+            ],
+            10
+          ],
+          "expected": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "args": [
+            [
+              2,
+              2,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              2,
+              1
+            ],
+            10
+          ],
+          "expected": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "815",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_00668",
+    "category": "mathematical_reasoning",
+    "prompt": "Madison takes her dog to the dog park. Counting Madison's dog, half the dogs have spots and 1/5 have pointy ears. If 15 dogs have spots, how many have pointy ears?\nGive your final numeric answer on the last line.",
+    "expected_answer": "6",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-00668",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_06078",
+    "category": "mathematical_reasoning",
+    "prompt": "Jezebel needs to buy two dozens of red roses and 3 pieces of sunflowers for a bouquet that she is going to arrange. Each red rose costs $1.50 and each sunflower costs $3. How much will Jezebel pay for all those flowers?\nGive your final numeric answer on the last line.",
+    "expected_answer": "45",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-06078",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_03844",
+    "category": "mathematical_reasoning",
+    "prompt": "Nancy bought a pie sliced it into 8 pieces. She gave 1/2 to Joe and Darcy, and she gave 1/4 to Carl. How many slices were left?\nGive your final numeric answer on the last line.",
+    "expected_answer": "2",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-03844",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_06958",
+    "category": "mathematical_reasoning",
+    "prompt": "They say the first year of a dog's life equals 15 human years. The second year of a dog's life equals 9 human years and after that, every year of a dog's life equals 5 human years. According to this logic, how many human years has my 10-year-old dog lived?\nGive your final numeric answer on the last line.",
+    "expected_answer": "64",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-06958",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0687",
+    "category": "python_coding",
+    "prompt": "Write a function to find the greatest common divisor (gcd) of two integers by using recursion.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "recur_gcd",
+      "description": "Write a function to find the greatest common divisor (gcd) of two integers by using recursion.",
+      "cases": [
+        {
+          "args": [
+            12,
+            14
+          ],
+          "expected": 2
+        },
+        {
+          "args": [
+            13,
+            17
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            9,
+            3
+          ],
+          "expected": 3
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "687",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_07125",
+    "category": "mathematical_reasoning",
+    "prompt": "Due to the restrictions of Coronavirus, Mr. Trent, the local store owner, increased the prices of goods at his store by 15% each to make the same income he was making before. If buying an orange was $40 and the price of purchasing a mango was $50, calculate how much it costs in total now to buy ten oranges and ten mangoes at the new prices.\nGive your final numeric answer on the last line.",
+    "expected_answer": "1035",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-07125",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_03400",
+    "category": "mathematical_reasoning",
+    "prompt": "On an American flag, the first stripe is red and half of the remaining stripes are also red. Each flag has 13 stripes.  John buys 10 flags.  How many red stripes are there?\nGive your final numeric answer on the last line.",
+    "expected_answer": "70",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-03400",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01333",
+    "category": "mathematical_reasoning",
+    "prompt": "Mehki is 10 years older than Jordyn. Jordyn's age is double Zrinka's age. If Zrinka is 6 years old, how many years old is Mehki?\nGive your final numeric answer on the last line.",
+    "expected_answer": "22",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01333",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_04399",
+    "category": "mathematical_reasoning",
+    "prompt": "An adult panda can eat 138 pounds of bamboo each day. A baby panda can eat 50 pounds of bamboo a day.  How many pounds of bamboo will the pandas eat in a week?\nGive your final numeric answer on the last line.",
+    "expected_answer": "1316",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-04399",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_00030",
+    "category": "mathematical_reasoning",
+    "prompt": "Mrs. Snyder used to spend 40% of her monthly income on rent and utilities. Her salary was recently increased by $600 so now her rent and utilities only amount to 25% of her monthly income. How much was her previous monthly income?\nGive your final numeric answer on the last line.",
+    "expected_answer": "1000",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-00030",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01375",
+    "category": "mathematical_reasoning",
+    "prompt": "Darla has 6 books in her locker.  Katie has half as many books as Darla, and Gary has 5 times the number of books that Darla and Katie have combined.  How many books do the three have total?\nGive your final numeric answer on the last line.",
+    "expected_answer": "54",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01375",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0641",
+    "category": "python_coding",
+    "prompt": "Write a function to find the nth nonagonal number.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "is_nonagonal",
+      "description": "Write a function to find the nth nonagonal number.",
+      "cases": [
+        {
+          "args": [
+            10
+          ],
+          "expected": 325
+        },
+        {
+          "args": [
+            15
+          ],
+          "expected": 750
+        },
+        {
+          "args": [
+            18
+          ],
+          "expected": 1089
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "641",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0817",
+    "category": "python_coding",
+    "prompt": "Write a function to find numbers divisible by m or n from a list of numbers using lambda function.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "div_of_nums",
+      "description": "Write a function to find numbers divisible by m or n from a list of numbers using lambda function.",
+      "cases": [
+        {
+          "args": [
+            [
+              19,
+              65,
+              57,
+              39,
+              152,
+              639,
+              121,
+              44,
+              90,
+              190
+            ],
+            19,
+            13
+          ],
+          "expected": [
+            19,
+            65,
+            57,
+            39,
+            152,
+            190
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10
+            ],
+            2,
+            5
+          ],
+          "expected": [
+            2,
+            5,
+            8,
+            10
+          ]
+        },
+        {
+          "args": [
+            [
+              10,
+              15,
+              14,
+              13,
+              18,
+              12,
+              20
+            ],
+            10,
+            5
+          ],
+          "expected": [
+            10,
+            15,
+            20
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "817",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_05077",
+    "category": "mathematical_reasoning",
+    "prompt": "At an auction event, the price of a TV, whose cost was $500, increased by 2/5 times its initial price. The price of a phone, which was $400, also increased by 40% from its original price. If Bethany had taken both items to the auction, calculate the total amount she received for the items after the sale at the auction.\nGive your final numeric answer on the last line.",
+    "expected_answer": "1260",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-05077",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0685",
+    "category": "python_coding",
+    "prompt": "Write a python function to find sum of prime numbers between 1 to n.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "sum_Of_Primes",
+      "description": "Write a python function to find sum of prime numbers between 1 to n.",
+      "cases": [
+        {
+          "args": [
+            10
+          ],
+          "expected": 17
+        },
+        {
+          "args": [
+            20
+          ],
+          "expected": 77
+        },
+        {
+          "args": [
+            5
+          ],
+          "expected": 10
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "685",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_05804",
+    "category": "mathematical_reasoning",
+    "prompt": "Daniel buys a magazine costing $0.85 and a pencil costing $0.50. He pays with a coupon that gives him $0.35 off. How much does he spend?\nGive your final numeric answer on the last line.",
+    "expected_answer": "1",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-05804",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_02509",
+    "category": "mathematical_reasoning",
+    "prompt": "A company has 1000 employees. There will be three rounds of layoffs. For each round of layoff, 10% of the remaining employees will be laid off. How many employees will be laid off in total?\nGive your final numeric answer on the last line.",
+    "expected_answer": "271",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-02509",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0717",
+    "category": "python_coding",
+    "prompt": "Write a function to calculate the standard deviation.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "sd_calc",
+      "description": "Write a function to calculate the standard deviation.",
+      "cases": [
+        {
+          "args": [
+            [
+              4,
+              2,
+              5,
+              8,
+              6
+            ]
+          ],
+          "expected": 2.23606797749979
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          "expected": 2.160246899469287
+        },
+        {
+          "args": [
+            [
+              5,
+              9,
+              10,
+              15,
+              6,
+              4
+            ]
+          ],
+          "expected": 4.070217029430577
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "717",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0852",
+    "category": "python_coding",
+    "prompt": "Write a python function to remove negative numbers from a list.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "remove_negs",
+      "description": "Write a python function to remove negative numbers from a list.",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              -2,
+              3,
+              -4
+            ]
+          ],
+          "expected": [
+            1,
+            3
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              -4
+            ]
+          ],
+          "expected": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "args": [
+            [
+              4,
+              5,
+              -6,
+              7,
+              -8
+            ]
+          ],
+          "expected": [
+            4,
+            5,
+            7
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "852",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0834",
+    "category": "python_coding",
+    "prompt": "Write a function to generate a square matrix filled with elements from 1 to n raised to the power of 2 in spiral order.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "generate_matrix",
+      "description": "Write a function to generate a square matrix filled with elements from 1 to n raised to the power of 2 in spiral order.",
+      "cases": [
+        {
+          "args": [
+            3
+          ],
+          "expected": [
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              8,
+              9,
+              4
+            ],
+            [
+              7,
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "args": [
+            2
+          ],
+          "expected": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "args": [
+            7
+          ],
+          "expected": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              8
+            ],
+            [
+              23,
+              40,
+              41,
+              42,
+              43,
+              30,
+              9
+            ],
+            [
+              22,
+              39,
+              48,
+              49,
+              44,
+              31,
+              10
+            ],
+            [
+              21,
+              38,
+              47,
+              46,
+              45,
+              32,
+              11
+            ],
+            [
+              20,
+              37,
+              36,
+              35,
+              34,
+              33,
+              12
+            ],
+            [
+              19,
+              18,
+              17,
+              16,
+              15,
+              14,
+              13
+            ]
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "834",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0692",
+    "category": "python_coding",
+    "prompt": "Write a python function to find the last two digits in factorial of a given number.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "last_Two_Digits",
+      "description": "Write a python function to find the last two digits in factorial of a given number.",
+      "cases": [
+        {
+          "args": [
+            7
+          ],
+          "expected": 40
+        },
+        {
+          "args": [
+            5
+          ],
+          "expected": 20
+        },
+        {
+          "args": [
+            2
+          ],
+          "expected": 2
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "692",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0680",
+    "category": "python_coding",
+    "prompt": "Write a python function to check whether a sequence of numbers has an increasing trend or not.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "increasing_trend",
+      "description": "Write a python function to check whether a sequence of numbers has an increasing trend or not.",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              4
+            ]
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            [
+              4,
+              3,
+              2,
+              1
+            ]
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            [
+              0,
+              1,
+              4,
+              9
+            ]
+          ],
+          "expected": true
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "680",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01659",
+    "category": "mathematical_reasoning",
+    "prompt": "James needs 200 blueberries to make a pint of blueberry jam and then a quart of blueberry jam to make a blueberry pie. If there are two pints per quart, how many blueberries does James need to pick to make 6 pies?\nGive your final numeric answer on the last line.",
+    "expected_answer": "2400",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01659",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_04027",
+    "category": "mathematical_reasoning",
+    "prompt": "Mr. Ha owns 5 more silver dollars than Mr. Phung. Mr. Phung has 16 more silver dollars than Mr. Chiu has. If Mr. Chiu has 56 silver dollars, how many silver dollars the three have in total?\nGive your final numeric answer on the last line.",
+    "expected_answer": "205",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-04027",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0693",
+    "category": "python_coding",
+    "prompt": "Write a function to remove multiple spaces in a string by using regex.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "remove_multiple_spaces",
+      "description": "Write a function to remove multiple spaces in a string by using regex.",
+      "cases": [
+        {
+          "args": [
+            "Google      Assistant"
+          ],
+          "expected": "Google Assistant"
+        },
+        {
+          "args": [
+            "Quad      Core"
+          ],
+          "expected": "Quad Core"
+        },
+        {
+          "args": [
+            "ChromeCast      Built-in"
+          ],
+          "expected": "ChromeCast Built-in"
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "693",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_05081",
+    "category": "mathematical_reasoning",
+    "prompt": "Kimmie received $450 from her handmade crafts at the supermarket. Her friend Zahra received 1/3 less money when she sold the same amount of handmade crafts at Etsy. If both of them save half of their earnings on the same savings account, calculate the total amount of money in the joint savings account?\nGive your final numeric answer on the last line.",
+    "expected_answer": "375",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-05081",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_04032",
+    "category": "mathematical_reasoning",
+    "prompt": "Cheryl placed 300 strawberries into 5 buckets. After she did that she decided to take 20 out of each bucket so they wouldn't get smashed. How many strawberries were left in each bucket?\nGive your final numeric answer on the last line.",
+    "expected_answer": "40",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-04032",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_00458",
+    "category": "mathematical_reasoning",
+    "prompt": "Fiona completed 36 math questions in an hour. Shirley was able to complete twice as many math questions within that same time, and Kiana completed half of the sum of Fiona and Shirley's math questions. If they each did the same number of questions the following hour, how many math questions did all three girls complete in 2 hours?\nGive your final numeric answer on the last line.",
+    "expected_answer": "324",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-00458",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0668",
+    "category": "python_coding",
+    "prompt": "Write a python function to replace multiple occurence of character by single.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "replace",
+      "description": "Write a python function to replace multiple occurence of character by single.",
+      "cases": [
+        {
+          "args": [
+            "peep",
+            "e"
+          ],
+          "expected": "pep"
+        },
+        {
+          "args": [
+            "Greek",
+            "e"
+          ],
+          "expected": "Grek"
+        },
+        {
+          "args": [
+            "Moon",
+            "o"
+          ],
+          "expected": "Mon"
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "668",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_00364",
+    "category": "mathematical_reasoning",
+    "prompt": "Tony paid $7 for 2 dozen apples and 1 bunch of bananas. Arnold paid $5 for 1 dozen apples and 1 bunch of bananas. How much does a bunch of bananas cost?\nGive your final numeric answer on the last line.",
+    "expected_answer": "3",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-00364",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0748",
+    "category": "python_coding",
+    "prompt": "Write a function to put spaces between words starting with capital letters in a given string by using regex.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "capital_words_spaces",
+      "description": "Write a function to put spaces between words starting with capital letters in a given string by using regex.",
+      "cases": [
+        {
+          "args": [
+            "Python"
+          ],
+          "expected": "Python"
+        },
+        {
+          "args": [
+            "PythonProgrammingExamples"
+          ],
+          "expected": "Python Programming Examples"
+        },
+        {
+          "args": [
+            "GetReadyToBeCodingFreak"
+          ],
+          "expected": "Get Ready To Be Coding Freak"
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "748",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0659",
+    "category": "python_coding",
+    "prompt": "Write a python function to print duplicants from a list of integers.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "Repeat",
+      "description": "Write a python function to print duplicants from a list of integers.",
+      "cases": [
+        {
+          "args": [
+            [
+              10,
+              20,
+              30,
+              20,
+              20,
+              30,
+              40,
+              50,
+              -20,
+              60,
+              60,
+              -20,
+              -20
+            ]
+          ],
+          "expected": [
+            20,
+            30,
+            -20,
+            60
+          ]
+        },
+        {
+          "args": [
+            [
+              -1,
+              1,
+              -1,
+              8
+            ]
+          ],
+          "expected": [
+            -1
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              1,
+              2
+            ]
+          ],
+          "expected": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "659",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_04310",
+    "category": "mathematical_reasoning",
+    "prompt": "Mark is buying asphalt to pave a new section of road. The road will be 2000 feet long and 20 feet wide. Each truckload of asphalt will cover 800 square feet of road. If each truckload costs $75, and there's a 20% sales tax, how much will Mark need to pay for asphalt?\nGive your final numeric answer on the last line.",
+    "expected_answer": "4500",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-04310",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0776",
+    "category": "python_coding",
+    "prompt": "Write a function to count those characters which have vowels as their neighbors in the given string.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "count_vowels",
+      "description": "Write a function to count those characters which have vowels as their neighbors in the given string.",
+      "cases": [
+        {
+          "args": [
+            "bestinstareels"
+          ],
+          "expected": 7
+        },
+        {
+          "args": [
+            "partofthejourneyistheend"
+          ],
+          "expected": 12
+        },
+        {
+          "args": [
+            "amazonprime"
+          ],
+          "expected": 5
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "776",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0708",
+    "category": "python_coding",
+    "prompt": "Write a python function to convert a string to a list.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "Convert",
+      "description": "Write a python function to convert a string to a list.",
+      "cases": [
+        {
+          "args": [
+            "python program"
+          ],
+          "expected": [
+            "python",
+            "program"
+          ]
+        },
+        {
+          "args": [
+            "Data Analysis"
+          ],
+          "expected": [
+            "Data",
+            "Analysis"
+          ]
+        },
+        {
+          "args": [
+            "Hadoop Training"
+          ],
+          "expected": [
+            "Hadoop",
+            "Training"
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "708",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0869",
+    "category": "python_coding",
+    "prompt": "Write a function to remove sublists from a given list of lists, which are outside a given range.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "remove_list_range",
+      "description": "Write a function to remove sublists from a given list of lists, which are outside a given range.",
+      "cases": [
+        {
+          "args": [
+            [
+              [
+                2
+              ],
+              [
+                0
+              ],
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                13,
+                14,
+                15,
+                17
+              ]
+            ],
+            13,
+            17
+          ],
+          "expected": [
+            [
+              13,
+              14,
+              15,
+              17
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                2
+              ],
+              [
+                0
+              ],
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                13,
+                14,
+                15,
+                17
+              ]
+            ],
+            1,
+            3
+          ],
+          "expected": [
+            [
+              2
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "args": [
+            [
+              [
+                2
+              ],
+              [
+                0
+              ],
+              [
+                1,
+                2,
+                3
+              ],
+              [
+                0,
+                1,
+                2,
+                3,
+                6,
+                7
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                13,
+                14,
+                15,
+                17
+              ]
+            ],
+            0,
+            7
+          ],
+          "expected": [
+            [
+              2
+            ],
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "869",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0749",
+    "category": "python_coding",
+    "prompt": "Write a function to sort a given list of strings of numbers numerically.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "sort_numeric_strings",
+      "description": "Write a function to sort a given list of strings of numbers numerically.",
+      "cases": [
+        {
+          "args": [
+            [
+              "4",
+              "12",
+              "45",
+              "7",
+              "0",
+              "100",
+              "200",
+              "-12",
+              "-500"
+            ]
+          ],
+          "expected": [
+            -500,
+            -12,
+            0,
+            4,
+            7,
+            12,
+            45,
+            100,
+            200
+          ]
+        },
+        {
+          "args": [
+            [
+              "2",
+              "3",
+              "8",
+              "4",
+              "7",
+              "9",
+              "8",
+              "2",
+              "6",
+              "5",
+              "1",
+              "6",
+              "1",
+              "2",
+              "3",
+              "4",
+              "6",
+              "9",
+              "1",
+              "2"
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5,
+            6,
+            6,
+            6,
+            7,
+            8,
+            8,
+            9,
+            9
+          ]
+        },
+        {
+          "args": [
+            [
+              "1",
+              "3",
+              "5",
+              "7",
+              "1",
+              "3",
+              "13",
+              "15",
+              "17",
+              "5",
+              "7 ",
+              "9",
+              "1",
+              "11"
+            ]
+          ],
+          "expected": [
+            1,
+            1,
+            1,
+            3,
+            3,
+            5,
+            5,
+            7,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "749",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01947",
+    "category": "mathematical_reasoning",
+    "prompt": "Randy has $200 in his piggy bank. He spends 2 dollars every time he goes to the store. He makes 4 trips to the store every month. How much money, in dollars, will be in his piggy bank after a year?\nGive your final numeric answer on the last line.",
+    "expected_answer": "104",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01947",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_06400",
+    "category": "mathematical_reasoning",
+    "prompt": "Emmalyn decided to paint fences in her neighborhood for twenty cents per meter. If there were 50 fences in the neighborhood that she had to paint and each fence was 500 meters long, calculate the total amount she earned from painting the fences.\nGive your final numeric answer on the last line.",
+    "expected_answer": "5000",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-06400",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_02771",
+    "category": "mathematical_reasoning",
+    "prompt": "Robert and Teddy are planning to buy snacks for their friends.  Robert orders five boxes of pizza at $10 each box and ten cans of soft drinks at $2 each. Teddy buys six hamburgers at $3 each and an additional ten cans of soft drinks. How much do they spend in all?\nGive your final numeric answer on the last line.",
+    "expected_answer": "106",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-02771",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01252",
+    "category": "mathematical_reasoning",
+    "prompt": "Josh went to the shopping center. He bought 9 films and 4 books. He also bought 6 CDs. Each film cost $5, each book cost $4 and each CD cost $3. How much did Josh spend in all?\nGive your final numeric answer on the last line.",
+    "expected_answer": "79",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01252",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01955",
+    "category": "mathematical_reasoning",
+    "prompt": "Andrew's dog has 12 burrs and six times as many ticks as burrs. How many foreign objects total are caught in the dog's fur?\nGive your final numeric answer on the last line.",
+    "expected_answer": "84",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01955",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_04827",
+    "category": "mathematical_reasoning",
+    "prompt": "Tyson played basketball on the schoolyard. He scored three points fifteen times, and two points twelve times. He also scored one point some number of times. How many times did he score one point, if in total he scored 75 points?\nGive your final numeric answer on the last line.",
+    "expected_answer": "6",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-04827",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0602",
+    "category": "python_coding",
+    "prompt": "Write a python function to find the first repeated character in a given string.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "first_repeated_char",
+      "description": "Write a python function to find the first repeated character in a given string.",
+      "cases": [
+        {
+          "args": [
+            "abcabc"
+          ],
+          "expected": "a"
+        },
+        {
+          "args": [
+            "abc"
+          ],
+          "expected": "None"
+        },
+        {
+          "args": [
+            "123123"
+          ],
+          "expected": "1"
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "602",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0851",
+    "category": "python_coding",
+    "prompt": "Write a python function to find sum of inverse of divisors.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "Sum_of_Inverse_Divisors",
+      "description": "Write a python function to find sum of inverse of divisors.",
+      "cases": [
+        {
+          "args": [
+            6,
+            12
+          ],
+          "expected": 2
+        },
+        {
+          "args": [
+            9,
+            13
+          ],
+          "expected": 1.44
+        },
+        {
+          "args": [
+            1,
+            4
+          ],
+          "expected": 4
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "851",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0638",
+    "category": "python_coding",
+    "prompt": "Write a function to calculate wind chill index.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "wind_chill",
+      "description": "Write a function to calculate wind chill index.",
+      "cases": [
+        {
+          "args": [
+            120,
+            35
+          ],
+          "expected": 40
+        },
+        {
+          "args": [
+            40,
+            70
+          ],
+          "expected": 86
+        },
+        {
+          "args": [
+            10,
+            100
+          ],
+          "expected": 116
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "638",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0840",
+    "category": "python_coding",
+    "prompt": "Write a python function to check whether the roots of a quadratic equation are numerically equal but opposite in sign or not.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "Check_Solution",
+      "description": "Write a python function to check whether the roots of a quadratic equation are numerically equal but opposite in sign or not.",
+      "cases": [
+        {
+          "args": [
+            2,
+            0,
+            -1
+          ],
+          "expected": "Yes"
+        },
+        {
+          "args": [
+            1,
+            -5,
+            6
+          ],
+          "expected": "No"
+        },
+        {
+          "args": [
+            2,
+            0,
+            2
+          ],
+          "expected": "Yes"
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "840",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_02250",
+    "category": "mathematical_reasoning",
+    "prompt": "At peak season, 6 packs of tuna fish are sold per hour, while in a low season 4 tuna packs are sold per hour. If each tuna pack is sold at $60, How much more money is made in a day during a high season than a low season if the fish are sold for 15 hours?\nGive your final numeric answer on the last line.",
+    "expected_answer": "1800",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-02250",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0621",
+    "category": "python_coding",
+    "prompt": "Write a function to increment the numeric values in the given strings by k.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "increment_numerics",
+      "description": "Write a function to increment the numeric values in the given strings by k.",
+      "cases": [
+        {
+          "args": [
+            [
+              "MSM",
+              "234",
+              "is",
+              "98",
+              "123",
+              "best",
+              "4"
+            ],
+            6
+          ],
+          "expected": [
+            "MSM",
+            "240",
+            "is",
+            "104",
+            "129",
+            "best",
+            "10"
+          ]
+        },
+        {
+          "args": [
+            [
+              "Dart",
+              "356",
+              "is",
+              "88",
+              "169",
+              "Super",
+              "6"
+            ],
+            12
+          ],
+          "expected": [
+            "Dart",
+            "368",
+            "is",
+            "100",
+            "181",
+            "Super",
+            "18"
+          ]
+        },
+        {
+          "args": [
+            [
+              "Flutter",
+              "451",
+              "is",
+              "44",
+              "96",
+              "Magnificent",
+              "12"
+            ],
+            33
+          ],
+          "expected": [
+            "Flutter",
+            "484",
+            "is",
+            "77",
+            "129",
+            "Magnificent",
+            "45"
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "621",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0910",
+    "category": "python_coding",
+    "prompt": "Write a function to validate a gregorian date.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "check_date",
+      "description": "Write a function to validate a gregorian date.",
+      "cases": [
+        {
+          "args": [
+            11,
+            11,
+            2002
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            13,
+            11,
+            2002
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            "11",
+            "11",
+            "2002"
+          ],
+          "expected": true
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "910",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0872",
+    "category": "python_coding",
+    "prompt": "Write a function to check if a nested list is a subset of another nested list.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "check_subset",
+      "description": "Write a function to check if a nested list is a subset of another nested list.",
+      "cases": [
+        {
+          "args": [
+            [
+              [
+                1,
+                3
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                13,
+                15,
+                17
+              ]
+            ],
+            [
+              [
+                1,
+                3
+              ],
+              [
+                13,
+                15,
+                17
+              ]
+            ]
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                6
+              ]
+            ],
+            [
+              [
+                3,
+                4
+              ],
+              [
+                5,
+                6
+              ]
+            ]
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            [
+              [
+                [
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  5,
+                  7
+                ]
+              ]
+            ],
+            [
+              [
+                [
+                  3,
+                  4
+                ],
+                [
+                  5,
+                  6
+                ]
+              ]
+            ]
+          ],
+          "expected": false
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "872",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_02362",
+    "category": "mathematical_reasoning",
+    "prompt": "Martha met Ellen in the grocery store alone and asked her age. Martha realized she was twice as old as Ellen will be in six years. If Ellen is 10 years old now, calculate Martha's age now.\nGive your final numeric answer on the last line.",
+    "expected_answer": "32",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-02362",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_02634",
+    "category": "mathematical_reasoning",
+    "prompt": "A bird watcher records the number of birds he sees each day.  One Monday he sees 70 birds.  On Tuesday he sees half as many birds as he did on Monday.  On Wednesday he sees 8 more birds than he did on Tuesday.  How many total birds did the bird watcher see from Monday to Wednesday?\nGive your final numeric answer on the last line.",
+    "expected_answer": "148",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-02634",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0608",
+    "category": "python_coding",
+    "prompt": "Write a python function to find nth bell number.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "bell_Number",
+      "description": "Write a python function to find nth bell number.",
+      "cases": [
+        {
+          "args": [
+            2
+          ],
+          "expected": 2
+        },
+        {
+          "args": [
+            3
+          ],
+          "expected": 5
+        },
+        {
+          "args": [
+            4
+          ],
+          "expected": 15
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "608",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_05698",
+    "category": "mathematical_reasoning",
+    "prompt": "Neeley bought a loaf of bread from the store and sliced it into 12 pieces. His family ate a third of the bread slices for breakfast. Then Neeley used 2 bread slices to make a sandwich for lunch. How many slices of bread remain?\nGive your final numeric answer on the last line.",
+    "expected_answer": "6",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-05698",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01418",
+    "category": "mathematical_reasoning",
+    "prompt": "The sum of Mario and Maria's ages now is 7. Mario is 1 year older than Maria. How old is Mario?\nGive your final numeric answer on the last line.",
+    "expected_answer": "4",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01418",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_01882",
+    "category": "mathematical_reasoning",
+    "prompt": "A bird eats 7 berries a day. Samuel has 5 birds. How many berries do Samuel's birds eat in 4 days?\nGive your final numeric answer on the last line.",
+    "expected_answer": "140",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-01882",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0937",
+    "category": "python_coding",
+    "prompt": "Write a function to count the most common character in a given string.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "max_char",
+      "description": "Write a function to count the most common character in a given string.",
+      "cases": [
+        {
+          "args": [
+            "hello world"
+          ],
+          "expected": "l"
+        },
+        {
+          "args": [
+            "hello "
+          ],
+          "expected": "l"
+        },
+        {
+          "args": [
+            "python pr"
+          ],
+          "expected": "p"
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "937",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_00497",
+    "category": "mathematical_reasoning",
+    "prompt": "Michael has a lot of matchsticks at home and decides to use them to make miniature models. As he is about to start crafting, he has second thoughts and decides to only use half of his pile of matchsticks. He creates 30 matchsticks houses. If he has now used all of the matchsticks he intended to and each matchstick house uses 10 matchsticks, how many matchsticks did Michael have originally?\nGive your final numeric answer on the last line.",
+    "expected_answer": "600",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-00497",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0697",
+    "category": "python_coding",
+    "prompt": "Write a function to find number of even elements in the given list using lambda function.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "count_even",
+      "description": "Write a function to find number of even elements in the given list using lambda function.",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              5,
+              7,
+              8,
+              9,
+              10
+            ]
+          ],
+          "expected": 3
+        },
+        {
+          "args": [
+            [
+              10,
+              15,
+              14,
+              13,
+              -18,
+              12,
+              -20
+            ]
+          ],
+          "expected": 5
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              4,
+              8,
+              9
+            ]
+          ],
+          "expected": 3
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "697",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0905",
+    "category": "python_coding",
+    "prompt": "Write a python function to find the sum of squares of binomial co-efficients.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "sum_of_square",
+      "description": "Write a python function to find the sum of squares of binomial co-efficients.",
+      "cases": [
+        {
+          "args": [
+            4
+          ],
+          "expected": 70
+        },
+        {
+          "args": [
+            5
+          ],
+          "expected": 252
+        },
+        {
+          "args": [
+            2
+          ],
+          "expected": 6
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "905",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0754",
+    "category": "python_coding",
+    "prompt": "Write a function to find common index elements from three lists.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "extract_index_list",
+      "description": "Write a function to find common index elements from three lists.",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7
+            ]
+          ],
+          "expected": [
+            1,
+            7
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ]
+          ],
+          "expected": [
+            1,
+            6
+          ]
+        },
+        {
+          "args": [
+            [
+              1,
+              1,
+              3,
+              4,
+              6,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7
+            ]
+          ],
+          "expected": [
+            1,
+            5
+          ]
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "754",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_07400",
+    "category": "mathematical_reasoning",
+    "prompt": "There are six oranges in a fruit basket. There are two fewer apples than oranges.  There are 3 times as many bananas as apples, and there are half as many peaches as bananas.  How many pieces of fruit are in the fruit basket?\nGive your final numeric answer on the last line.",
+    "expected_answer": "28",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-07400",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0959",
+    "category": "python_coding",
+    "prompt": "Write a python function to find the average of a list.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "Average",
+      "description": "Write a python function to find the average of a list.",
+      "cases": [
+        {
+          "args": [
+            [
+              15,
+              9,
+              55,
+              41,
+              35,
+              20,
+              62,
+              49
+            ]
+          ],
+          "expected": 35.75
+        },
+        {
+          "args": [
+            [
+              4,
+              5,
+              1,
+              2,
+              9,
+              7,
+              10,
+              8
+            ]
+          ],
+          "expected": 5.75
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "expected": 2
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "959",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0952",
+    "category": "python_coding",
+    "prompt": "Write a function to compute the value of ncr mod p.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "nCr_mod_p",
+      "description": "Write a function to compute the value of ncr mod p.",
+      "cases": [
+        {
+          "args": [
+            10,
+            2,
+            13
+          ],
+          "expected": 6
+        },
+        {
+          "args": [
+            11,
+            3,
+            14
+          ],
+          "expected": 11
+        },
+        {
+          "args": [
+            18,
+            14,
+            19
+          ],
+          "expected": 1
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "952",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0683",
+    "category": "python_coding",
+    "prompt": "Write a python function to check whether the given number can be represented by sum of two squares or not.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "sum_Square",
+      "description": "Write a python function to check whether the given number can be represented by sum of two squares or not.",
+      "cases": [
+        {
+          "args": [
+            25
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            24
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            17
+          ],
+          "expected": true
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "683",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0704",
+    "category": "python_coding",
+    "prompt": "Write a function to calculate the harmonic sum of n-1.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "harmonic_sum",
+      "description": "Write a function to calculate the harmonic sum of n-1.",
+      "cases": [
+        {
+          "args": [
+            10
+          ],
+          "expected": 2.9289682539682538
+        },
+        {
+          "args": [
+            4
+          ],
+          "expected": 2.083333333333333
+        },
+        {
+          "args": [
+            7
+          ],
+          "expected": 2.5928571428571425
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "704",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0871",
+    "category": "python_coding",
+    "prompt": "Write a python function to check whether the given strings are rotations of each other or not.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "are_Rotations",
+      "description": "Write a python function to check whether the given strings are rotations of each other or not.",
+      "cases": [
+        {
+          "args": [
+            "abc",
+            "cba"
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            "abcd",
+            "cdba"
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            "abacd",
+            "cdaba"
+          ],
+          "expected": true
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "871",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0777",
+    "category": "python_coding",
+    "prompt": "Write a python function to find the sum of non-repeated elements in a given array.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "find_Sum",
+      "description": "Write a python function to find the sum of non-repeated elements in a given array.",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              1,
+              1,
+              4,
+              5,
+              6
+            ],
+            8
+          ],
+          "expected": 21
+        },
+        {
+          "args": [
+            [
+              1,
+              10,
+              9,
+              4,
+              2,
+              10,
+              10,
+              45,
+              4
+            ],
+            9
+          ],
+          "expected": 71
+        },
+        {
+          "args": [
+            [
+              12,
+              10,
+              9,
+              45,
+              2,
+              10,
+              10,
+              45,
+              10
+            ],
+            9
+          ],
+          "expected": 78
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "777",
+    "split": "test"
+  },
+  {
+    "question_id": "gsm8k_train_00155",
+    "category": "mathematical_reasoning",
+    "prompt": "Ariella has $200 more in her son's saving account than Daniella has in her son's savings account. Ariella's account earns her simple interest at the rate of 10% per annum. If Daniella has $400, how much money will Arialla have after two years?\nGive your final numeric answer on the last line.",
+    "expected_answer": "720",
+    "evaluation_type": "exact_numeric",
+    "source": {
+      "name": "GSM8K",
+      "url": "https://github.com/openai/grade-school-math",
+      "license": "MIT",
+      "license_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+      "source_commit": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "transformation": "Used the official train.jsonl question; appended a final-answer formatting instruction; extracted the numeric value after the final #### marker and removed thousands-separator commas."
+    },
+    "source_question_id": "train-line-00155",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0900",
+    "category": "python_coding",
+    "prompt": "Write a function where a string will start with a specific number.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "match_num",
+      "description": "Write a function where a string will start with a specific number.",
+      "cases": [
+        {
+          "args": [
+            "5-2345861"
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            "6-2345861"
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            "78910"
+          ],
+          "expected": false
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "900",
+    "split": "test"
+  },
+  {
+    "question_id": "mbpp_0846",
+    "category": "python_coding",
+    "prompt": "Write a function to find the minimum number of platforms required for a railway/bus station.\nReturn Python code defining the required function.",
+    "test_spec": {
+      "function_name": "find_platform",
+      "description": "Write a function to find the minimum number of platforms required for a railway/bus station.",
+      "cases": [
+        {
+          "args": [
+            [
+              900,
+              940,
+              950,
+              1100,
+              1500,
+              1800
+            ],
+            [
+              910,
+              1200,
+              1120,
+              1130,
+              1900,
+              2000
+            ],
+            6
+          ],
+          "expected": 3
+        },
+        {
+          "args": [
+            [
+              100,
+              200,
+              300,
+              400
+            ],
+            [
+              700,
+              800,
+              900,
+              1000
+            ],
+            4
+          ],
+          "expected": 4
+        },
+        {
+          "args": [
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              4,
+              3,
+              2,
+              1
+            ],
+            4
+          ],
+          "expected": 1
+        }
+      ]
+    },
+    "evaluation_type": "python_tests",
+    "source": {
+      "name": "MBPP",
+      "url": "https://github.com/google-research/google-research/tree/master/mbpp",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_metadata_url": "https://huggingface.co/datasets/google-research-datasets/mbpp",
+      "source_commit": "0eebfd403ba438bfd14cb70b9b24a7745c997083",
+      "upstream_repository_license": "Apache-2.0",
+      "license_note": "The Google Research repository has an Apache-2.0 repository license; the Google Research Datasets Hugging Face card explicitly labels MBPP data CC-BY-4.0. The dataset-card declaration is recorded for the data, and both upstream notices must be reviewed when redistributing.",
+      "transformation": "Used task text and test_list from an upstream documented training task (task_id 601-974); converted only direct assert function-call equality tests with literal JSON-compatible arguments and expected values. Reference code was not loaded or executed."
+    },
+    "source_question_id": "846",
+    "split": "test"
+  }
+]

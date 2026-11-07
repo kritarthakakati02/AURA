@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from app.inference import InferenceResult, OllamaClient
-from benchmarks.dataset import DEFAULT_DATASET_PATH, load_dataset
+from benchmarks.dataset import DEFAULT_DATASET_PATH, canonical_question_id, load_dataset
 from benchmarks.evaluate import evaluate_response
 
 logger = logging.getLogger(__name__)
@@ -29,7 +29,7 @@ def build_result_row(
     row: dict[str, Any] = {
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "model": model,
-        "question_id": question["id"],
+        "question_id": canonical_question_id(question),
         "category": question["category"],
         "evaluation_type": question["evaluation_type"],
         "prompt": question["prompt"],
@@ -45,7 +45,7 @@ def build_result_row(
             row["correct"] = correct
             row["evaluation_error"] = error or ""
         except Exception as exc:
-            logger.exception("Evaluation failed for %s / %s", model, question["id"])
+            logger.exception("Evaluation failed for %s / %s", model, canonical_question_id(question))
             row["evaluation_error"] = f"{type(exc).__name__}: {exc}"
     return row
 
@@ -83,7 +83,7 @@ def run_benchmark(
                 result = client.generate(model, question["prompt"])
                 writer.writerow(build_result_row(model, question, result, code_timeout))
                 result_file.flush()
-                logger.info("%s %s: %s", model, question["id"], result.status)
+                logger.info("%s %s: %s", model, canonical_question_id(question), result.status)
     return output_path
 
 

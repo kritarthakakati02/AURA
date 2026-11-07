@@ -18,7 +18,24 @@ def load_dataset(path: Path = DEFAULT_DATASET_PATH) -> list[dict[str, Any]]:
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError(f"Could not load benchmark dataset at {path}: {exc}") from exc
     validate_dataset(questions)
+    for question in questions:
+        question.setdefault("question_id", canonical_question_id(question))
     return questions
+
+
+def canonical_question_id(question: dict[str, Any]) -> str:
+    """Return the canonical identifier, accepting legacy ``id`` records."""
+    legacy_id = question.get("id")
+    question_id = question.get("question_id")
+    for field, value in (("id", legacy_id), ("question_id", question_id)):
+        if value is not None and (not isinstance(value, str) or not value.strip()):
+            raise ValueError(f"question requires a non-empty string '{field}'")
+    if legacy_id is not None and question_id is not None and legacy_id != question_id:
+        raise ValueError("conflicting 'id' and 'question_id' values")
+    identifier = question_id if question_id is not None else legacy_id
+    if identifier is None:
+        raise ValueError("question requires a non-empty 'id' or 'question_id'")
+    return identifier
 
 
 def validate_dataset(questions: Any) -> None:
@@ -31,12 +48,16 @@ def validate_dataset(questions: Any) -> None:
         location = f"question at index {index}"
         if not isinstance(question, dict):
             raise ValueError(f"{location} must be an object")
-        for field in ("id", "category", "prompt", "evaluation_type"):
+        for field in ("category", "prompt", "evaluation_type"):
             if not isinstance(question.get(field), str) or not question[field].strip():
                 raise ValueError(f"{location} requires a non-empty '{field}'")
-        if question["id"] in seen_ids:
-            raise ValueError(f"duplicate question id: {question['id']}")
-        seen_ids.add(question["id"])
+        try:
+            question_id = canonical_question_id(question)
+        except ValueError as exc:
+            raise ValueError(f"{location} {exc}") from exc
+        if question_id in seen_ids:
+            raise ValueError(f"duplicate question id: {question_id}")
+        seen_ids.add(question_id)
 
         evaluation_type = question["evaluation_type"]
         if evaluation_type not in VALID_EVALUATION_TYPES:
