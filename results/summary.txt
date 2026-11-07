@@ -1,0 +1,12 @@
+AURA benchmark summary
+Accuracy excludes failed infrastructure requests and includes evaluated responses only.
+Latency includes all attempts; token averages include successful responses with token counts.
+Paired correctness disagreement is the fraction of questions with at least two distinct models having valid evaluated outcomes where models disagree.
+
+model | category | accuracy | avg latency (s) | median (s) | p95 (s) | avg generated tokens | failure rate | paired disagreement
+qwen2.5:1.5b | all | 23/30 | 3.3498 | 3.2134 | 4.8805 | 111.7333 | 0.0000 | 0.1667
+qwen2.5:1.5b | mathematical_reasoning | 12/15 | 3.9109 | 3.7752 | 6.6211 | 164.4000 | 0.0000 | 0.2667
+qwen2.5:1.5b | python_coding | 11/15 | 2.7887 | 2.6955 | 3.2597 | 59.0667 | 0.0000 | 0.0667
+qwen2.5:3b | all | 20/30 | 4.3423 | 4.0554 | 6.5887 | 132.0667 | 0.0000 | 0.1667
+qwen2.5:3b | mathematical_reasoning | 10/15 | 5.3865 | 5.6663 | 6.6600 | 196.2000 | 0.0000 | 0.2667
+qwen2.5:3b | python_coding | 10/15 | 3.2980 | 3.0102 | 4.8349 | 67.9333 | 0.0000 | 0.0667
