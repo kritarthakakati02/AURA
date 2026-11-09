@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Results and temporary analysis files
+results/*.csv
+results/train/
+results/validation/
+CODING_BENCHMARK_FIX.md
+
+# Keep the results directory structure but ignore generated files
+!results/.gitkeep
+# Benchmark outputs
+results/*.csv
+results/*.txt
+results/train/
+results/validation/
